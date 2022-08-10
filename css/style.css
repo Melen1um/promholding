@@ -593,7 +593,7 @@ td {
 /* company block end */
 /* advert */
 .advert{
-
+	margin-top: 80px;
 }
 .advert__title{
 	text-align: center;
