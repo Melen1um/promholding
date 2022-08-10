@@ -101,7 +101,7 @@
 				Доставка по РФ от 1 дня
 			</div>
 			<div class="priority">
-				Оплата после поставки. Сначала испытайте, потом платите.
+				Оплата после поставки. <span class="decor">Сначала испытайте, потом платите.</span>
 			</div>
 		<div class="about__button">
 			<input type="button" value="Оставить заявку" class="open-button">
@@ -176,7 +176,7 @@
 				</div>
 				<div class="main__general">
 					<div class="main__title">
-						Наши тележки сделаны из конструкционного металла  марки<span class="lime bold"> "сталь 20"</span>. Техника, сделанная из этой стали, спокойно выдерживает эксплуатацию в температурном диапазоне<span class="lime bold"> от - 40 до + 150 градусов по Цельсию.</span>
+						Наши тележки сделаны из конструкционного металла  марки<span class="lime bold"> "сталь 20"</span>. Техника, сделанная из этой стали, спокойно выдерживает эксплуатацию в температурном диапазоне<span class="lime bold"> от - 40 до + 150 градусов по Цельсию.</span>Она достаточно жесткая, чтобы не гнуться под весом в несколько тонн, но достаточно легкая, чтобы не нагружать прицеп комбайна новыми сотнями килограммов и сжигать лишнее топливо. 
 					</div>
 					<div class="main__image">
 						<img src="img/main2.jpg" alt="">
@@ -187,7 +187,7 @@
 						<img src="img/main4.png" alt="">
 					</div>
 					<div class="main__title">
-						Она достаточно жесткая, чтобы не гнуться под весом в несколько тонн, но достаточно легкая, чтобы не нагружать прицеп комбайна новыми сотнями килограммов и сжигать лишнее топливо. Каждое колесо выдерживает нагрузку в 1850 киллограм.  А <span class="lime bold">покрышки сделаны из 14-слойной  сельскохозяйственной шины</span>, чтобы защитить колеса от проколов
+						Каждое колесо выдерживает нагрузку в 1850 киллограм.  А <span class="lime bold">покрышки сделаны из 14-слойной  сельскохозяйственной шины</span>, чтобы защитить колеса от проколов
 					</div>
 				</div>
 				<div class="main__general">
@@ -390,8 +390,50 @@
 		</div>
 		</div>
 	<!-- review second end -->
-	div.
+	<!-- advert -->
+	<div class="advert">
+		<div class="container">
+			<div class="advert__title">
+				Нужны жатки для уборки подсолнечника, зерноуборочные комбайны и рапсовые столы?
+			</div>
+			<div class="advert__main">
+				<div class="advert__block">
+					<div class="advert__texts">
+					<div class="advert__text">
+						<div class="mid clearfix">
+						<div id="counter">
+					      <div class="bl">
+					        <div data-num="7" class="advert__number lime">0</div>
+					        <div class="text">лет являемся дилерами 3-х производителей этих видов техники. Выбирали тщательно</div>
+					      </div>
+					      <div class="bl">
+					        <div data-num="57" class="advert__number lime">0</div>
+					        <div class="text">тележек продали</div>
+					      </div>
+					  </div>
+					</div>	
+				  </div>
+				  		<div class="advert__button">
+						<input type="button" class="open-button" value="Связаться с нами">
+					</div>
+					</div>
+					<div class="advert__textimage">
+						Жатки
+					</div>
+					</div>
+				<div class="advert__block">
+					<div class="advert__image">
+						Комбайн
+					</div>
+					<div class="advert__image">
+						Рапсовые столы
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<!-- advert end -->
 	</main>
 	<!-- footer -->
 	<footer class="foot">
@@ -427,6 +469,7 @@
 	</footer>
 	<!-- footer end -->
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 	
 	function openForm() {
@@ -436,6 +479,39 @@
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+/* счетчик */
+var time = 2,
+  cc = 1;
+$(window).scroll(function() {
+  $('#counter').each(function() {
+    var
+      cPos = $(this).offset().top,
+      topWindow = $(window).scrollTop();
+    if (cPos < topWindow + 200) {
+      if (cc < 2) {
+        $(".advert__number").addClass("viz");
+        $('div').each(function() {
+          var
+            i = 1,
+            num = $(this).data('num'),
+            step = 1000 * time / num,
+            that = $(this),
+            int = setInterval(function() {
+              if (i <= num) {
+                that.html(i);
+              } else {
+                cc = cc + 2;
+                clearInterval(int);
+              }
+              i++;
+            }, step);
+        });
+      }
+    }
+  });
+});
+/* счетчик конец */
+
 </script>
 </body>
 </html>
