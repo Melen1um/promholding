@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/chief-slider.min.css">
+	<title> Project </title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	 <script defer src="js/chief-slider.min.js"></script>
+	  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = new ChiefSlider('.slider', {
+        loop: true
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="wrapper">
+	<!-- Шапка сайта -->
+	<header class="head">
+		<div class="container">
+		<div class="head__contact">
+              <div class="head__numbers">
+              	<a href="tel:78002015687" class="number">+7 (800) 201-56-87</a>
+              	<a href="tel:79094121495" class="number">+7 (909) 412-14-95</a>
+              </div>
+              <div class="head__company">
+              	<img src="img/logo.png" alt="">
+              </div>
+              <div class="head__mail">
+              	<a href="mailto:info@prom-holding.com">info@prom-holding.com</a>
+              </div>
+		</div>
+		<div class="head__address">
+			<div class="head__location">
+				Ростовская обл., г. Батайск, Восточное шоссе, <strong>14</strong> офис <strong>316</strong>
+			</div>
+			<div class="head__button">
+				<input type="button" class="open-button" onclick="openForm()" value="Заказать обратный звонок">
+				<div class="form-popup" id="myForm">
+				  <form action="/action_page.php" class="form-container">
+				    <h1 align="center" class="form-color">Долго ждать не заставим. Обычно перезваниваем в течение 5 минут</h1>
+				    <input type="text" placeholder="Имя" name="first_name" required>
+					<input type="text" placeholder="Фамилия" name="last_name" required>
+					<input type="number" placeholder="Номер телефона" name="number" required>
+					<input type="text" placeholder="Комментарий" name="Comment" required>
+				    <button type="submit" class="btn">Заказать</button>
+				    <button type="submit" class="btn cancel" onclick="closeForm()">Закрыть</button>
+				  </form>
+				</div>
+			</div>
+		</div>
+		<div class="head__menu">
+			<div class="head__navmenu">
+				<div class="head__menu_punct">
+					Технология
+				</div>
+				<div class="head__menu_punct">
+					Виды тележек
+				</div>
+				<div class="head__menu_punct">
+					О нас
+				</div>
+			</div>
+			<div class="head__socials">
+				<div class="social__media">
+					<a href=""><img src="img/whatsapp.png" alt="" width="40"></a>
+				</div>
+				<div class="social__media">
+					<a href=""><img src="img/telegram.png" alt="" width="40"></a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</header>
+	<!-- Конец шапки сайта -->
+	<!-- about main block -->
+	<main class="content">
+	<div class="about">
+		<div class="container">
+			<h1 class="title">
+				За  <span class="lime">2</span>  года мы продали <span class="lime">320</span> тележек для жатки<br> Мы хотим продавать <span class="lime">1000</span> штук в год.
+			</h1>
+		<div class="about__main__block">
+		<div class="about__image">
+			<img src="img/about.jpg" alt="">
+		</div>
+			<div class="about__textblock">
+			<h1 class="about__title">
+				<br>
+				Почему мы думаем, что вы тоже захотите у нас купить тележку?
+			</h1>
+			<!--
+			<p class="about__description">
+				- Даем гарантию 2 года. <br>- Доставка по РФ от 1 дня.<br>- Оплата после поставки. <br>- Сначала испытайте, потом платите.
+			</p> -->
+			<div class="priority">
+				Даем гарантию 2 года
+			</div>
+			<div class="priority">
+				Доставка по РФ от 1 дня
+			</div>
+			<div class="priority">
+				Оплата после поставки. Сначала испытайте, потом платите.
+			</div>
+		<div class="about__button">
+			<input type="button" value="Оставить заявку" class="open-button">
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	<!-- about main block end -->
+	<!-- Akif block -->
+	<div class="akif">
+					<div class="container">
+	
+		<div class="akif__info">
+
+			<div class="akif__imageblock">
+				<div class="akif__photo">
+				Фотка Акифа
+				</div>
+				<div class="akif__description">
+					<strong>Акиф Абдуллаев<br> инженер</strong> ФГБНУ Национальный центр зерна имени П. П. Лукьяненко<br> 8-995-207-08-37
+				</div>
+
+			</div>
+			<div class="akif__center">
+					<div class="akif__title">
+			"Я сравнивал тележки для жатки  5 производителей и выбрал тележки Пром Холдинг по лучшему соотношению цены и качества"
+		</div>
+			<div class="akif__descript">Искал двухосную тележку, устойчивую на грунтовых дорогах для наших 7-метровых жаток Ростсельмаша.<br>  Изучал все: и качество металла и грузоподьемность, и конечно, цену. Понравилась конструкция тележек Промхолдинг. В итоге купил 5 штук</div>
+			<div class="akif__button">
+			<input type="button" value="Связаться с нами" class="open-button">
+		</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<!-- akif end -->
+	<!-- why -->
+	<div class="why">
+		<div class="container">
+			<div class="why__main__block">
+			<div class="why__textblock">
+				<div class="why__title">Почему иногда бывает так сложно выбирать  сельскохозяйственную технику?<br> - Потому что никто не предлагает то, что нужно конкретно вам.<br><br>
+					Давайте исправлять
+				</div>
+				<p class="why__text">Вы хотите тележку для жатки, способную ездить как по бездорожью так и про трассе с эксплуатационным сроком 8 лет? Хотите, чтобы тележка спокойно могла перевозить и хранить жатки общим весом до 5,5 тонн и не ломаться и гнуться при тряске?
+				Но самое главное - вы хотите гарантию на тележку 2 года, и заплатить только после получения и испытания тележки на деле?<br>
+				<u>Тогда у нас для вас предложение</u></p>
+		</div>
+		<div class="akif__image">
+			<img src="img/akif.jpg" alt="">
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- why end -->
+	<!-- main -->
+	<div class="main">
+		<div class="container">
+				<div class="main__title center lime"><b class="big">
+					Но давайте сначала разберем,<br> почему эти тележки для жатки идеальны по соотношению цены и качества.
+				</div>	
+				<div class="main__title center bold">Мы знаем, что вы тратите миллионы на полный комплект сельхозтехники: комбайны, тракторы, жатки и т.д. Не говоря уже об удобрениях, зарплатах и налогах.    <br>Поэтому, мы понимаем, что за конечное звено этой всей колонны - тележку для жатки - вам не хочется переплачивать. Она должна быть простой, доступной, но абсолютно надежной. Помня об этом, мы создавали эти тележки.</b></div>
+				<div class="main__general">
+					<div class="main__image">
+						<img src="img/main1.png" alt="">
+					</div>
+					<div class="main__title">
+						Производством тележки занимались наши инженеры,  создававшие технику для немецкого бренда сельскохозяйственной техники <span class="lime bold">Claas</span>
+					</div>
+					
+				</div>
+				<div class="main__general">
+					<div class="main__title">
+						Наши тележки сделаны из конструкционного металла  марки<span class="lime bold"> "сталь 20"</span>. Техника, сделанная из этой стали, спокойно выдерживает эксплуатацию в температурном диапазоне<span class="lime bold"> от - 40 до + 150 градусов по Цельсию.</span>
+					</div>
+					<div class="main__image">
+						<img src="img/main2.jpg" alt="">
+					</div>
+				</div>
+				<div class="main__general">
+					<div class="main__image">
+						<img src="img/main4.png" alt="">
+					</div>
+					<div class="main__title">
+						Она достаточно жесткая, чтобы не гнуться под весом в несколько тонн, но достаточно легкая, чтобы не нагружать прицеп комбайна новыми сотнями килограммов и сжигать лишнее топливо. Каждое колесо выдерживает нагрузку в 1850 киллограм.  А <span class="lime bold">покрышки сделаны из 14-слойной  сельскохозяйственной шины</span>, чтобы защитить колеса от проколов
+					</div>
+				</div>
+				<div class="main__general">
+				
+				<div class="main__title">
+					И еще 2 слова об эстетике.  Кроме грунта, при покраски тележек мы используем шелковисто-глянцевую эмаль марки<span class="lime bold"> Транслак Pur 550 g50</span>. 
+					Мы выбрали ее, когда узнали, что ее используют автобусные заводы, такие как "Волгобас" и многие другие.  Как известно, автобусы "живут" в агрессивных средах: трасса, бензин, масло. Но данная краска позволяет им сохранить "красоту"<span class="lime bold"> 6-8 лет без перекрашивания</span>.
+				</div>
+				<div class="main__image">
+					<img src="img/main6.jpg" alt="">
+				</div>
+				</div>
+				<div class="main__title center">
+					Это значит, что ваша тележка через годы  не будет похожа на ржавую трубу<br> на колесах, а наоборот, будет украшать колонну техники<br> своей яркостью как на поле, так и на трассе.
+				</div>
+				<div class="main__button">
+					<input type="button" value="Получить консультацию" class="open-button">
+				</div>
+		</div>
+	</div>
+	<!-- main end -->
+	<!-- reviews -->
+	<div class="review">
+		<div class="container">
+	 <div class="slider">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <div class="review__info">
+			
+			<div class="akif__imageblock">
+				<div class="akif__photo">
+				Пользователь
+				</div>
+				<div class="akif__description">
+				Описание пользователя, номер, и тд
+				</div>
+
+			</div>
+			<div class="akif__center">
+			<div class="akif__descript">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorum, inventore quod ipsam ipsa, recusandae temporibus blanditiis excepturi iste, a sapiente repudiandae. Aperiam inventore recusandae dicta a! Sunt maiores, odit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ratione, expedita doloribus! Accusamus nobis suscipit nostrum iure temporibus totam autem, at exercitationem accusantium soluta, necessitatibus cum, delectus quaerat officiis inventore, ducimus dignissimos eveniet possimus expedita aut incidunt consequatur voluptatem ab modi.
+			</div>
+		</div>
+		</div>
+            </div>
+            <div class="slider__item">
+              <!-- Контент 2 слайда -->
+            </div>
+            <div class="slider__item">
+              <!-- Контент 3 слайда -->
+            </div>
+          </div>
+        </div>
+      </div>
+	      <a href="#" class="slider__control" data-slide="prev"></a>
+	      <a href="#" class="slider__control" data-slide="next"></a>
+  		</div>
+		</div>
+		</div>
+
+	<!-- reviews end -->
+	<!-- infoblock -->
+	<div class="infoblock">
+		<div class="container">
+		<h2 class="infoblock__title">
+			Тележки универсальны,  ширина захвата от 5 до 12 метров.  Подойдут для любого производителя и типа жаток.
+		</h2>
+		<div class="infoblock__table">
+			<table>
+				<tr>
+					<th>Параметры</th>
+					<th>Одноосные тележки</th>
+					<th>Двухосные тележки</th>
+				</tr>
+				<tr>
+					<td>Ширина захвата адаптера, м</td>
+					<td>7,0; 7,5; 7,62; 9,0; 9,15. до 8 м -</td>
+					<td>до 12 м и более</td>
+				</tr>
+				<tr>
+					<td>Дорожный просвет, мм</td>
+					<td>300<br>437 (адаптеры Джон Дир)</td>
+					<td>300<br>437 (адаптеры Джон Дир)</td>
+				</tr>
+				<tr>
+					<td>Колея колес, мм</td>
+					<td>1960</td>
+					<td>1960</td>
+				</tr>
+				<tr>
+					<td>Допустимая нагрузка на одно колесо, кг</td>
+					<td>1850</td>
+					<td>1850</td>
+				</tr>
+				<tr>
+					<td>Шины</td>
+					<td>10/75-15,3</td>
+					<td>10/75-15,3</td>
+				</tr>
+				<tr>
+					<td>Грузоподъемность, кг</td>
+					<td>до 2000</td>
+					<td>до 5500</td>
+				</tr>
+				<tr>
+					<td>Габаритные размеры: длина, ширина, высота, мм</td>
+					<td>10409*2813*1212</td>
+					<td>12760*2230*1265</td>
+				</tr>
+				<tr>
+					<td>Максимальная скорость движения, км/ч</td>
+					<td>35</td>
+					<td>35</td>
+				</tr>
+			</table>
+		</div>
+		<div class="infoblock__certificate">
+			<div class="infoblock__image">
+				<img src="img/certificate.png" alt="">
+			</div>
+			<div class="infoblock__textblock">
+				<div class="infoblock__text">
+					<h1 class="infoblock__title">Lorem ipsum, dolor sit amet.</h1>
+					Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Labore exercitationem, at laborum omnis mollitia maiores quisquam itaque eveniet repellendus libero tempora. Natus quod delectus, laudantium quo unde repudiandae, quam optio ipsum soluta nulla vero atque blanditiis voluptatibus fuga? Ipsam minus eius eos necessitatibus laborum quasi sint nobis, amet possimus, eum aut, cum ea. Architecto hic quia quae veniam magnam, beatae sed debitis aliquam unde perferendis, quam facilis rem. Eius et, veniam ducimus itaque officia ad nam dolor minima at reiciendis autem exercitationem possimus repellat quas non velit minus labore ab laboriosam dolore repudiandae eligendi, aut. Nulla vitae perspiciatis animi vel dicta vero ratione nemo culpa blanditiis alias sed quae ab ut rem similique, laudantium minima. Explicabo officiis, possimus at quidem, quibusdam itaque mollitia veritatis adipisci aperiam velit, non fugit voluptates.
+				</div>
+				<div class="infoblock__button">
+					<input type="button" class="open-button" value="Узнать цены">
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- infoblock end -->
+	<!-- about company -->
+	<div class="company">
+		<div class="container">
+			<div class="company__main">
+			<div class="company__textblock">
+				<div class="company__texts">
+				<div class="company__title">
+					"Мы - не гиганты производства  сельхозоборудования. Но зато, в отличие от гигантов, наши тележки всегда в наличии."
+				</div>
+				<div class="company__text">
+					У нас небольшое компактное производство - всего 9 человек и всего один товар -тележки для жатки. Но наши тележки всегда в наличии. Почему? Стабильные, равномерные заказы круглый год. В несезон нам не нужно собирать общий тираж  из заказов нескольких клиентов ради того, чтобы выдернуть мастеров из других производственных линий,  например, комбайнерных, где они в основном заняты. Это заставляет клиентов ждать месяцами. Мы этого не хотим, поэтому заняты только тележками и производим их круглый год. Закажите сейчас - получите ее сразу.
+				</div>
+				</div>
+				<div class="company__button">
+					<input type="button" class="open-button" value="Узнать цены">
+				</div>
+			</div>
+			<div class="company__image">
+				Фотка коллектива
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- about company end -->
+	<!-- review second -->
+	<div class="review">
+		<div class="container">
+	 <div class="slider">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <div class="review__info">
+			
+			<div class="akif__imageblock">
+				<div class="akif__photo">
+				Пользователь
+				</div>
+				<div class="akif__description">
+				Описание пользователя, номер, и тд
+				</div>
+
+			</div>
+			<div class="akif__center">
+			<div class="akif__descript">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorum, inventore quod ipsam ipsa, recusandae temporibus blanditiis excepturi iste, a sapiente repudiandae. Aperiam inventore recusandae dicta a! Sunt maiores, odit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ratione, expedita doloribus! Accusamus nobis suscipit nostrum iure temporibus totam autem, at exercitationem accusantium soluta, necessitatibus cum, delectus quaerat officiis inventore, ducimus dignissimos eveniet possimus expedita aut incidunt consequatur voluptatem ab modi.
+			</div>
+		</div>
+		</div>
+            </div>
+            <div class="slider__item">
+              <!-- Контент 2 слайда -->
+            </div>
+            <div class="slider__item">
+              <!-- Контент 3 слайда -->
+            </div>
+          </div>
+        </div>
+      </div>
+	      <a href="#" class="slider__control" data-slide="prev"></a>
+	      <a href="#" class="slider__control" data-slide="next"></a>
+  		</div>
+		</div>
+		</div>
+	<!-- review second end -->
+	div.
+
+	</main>
+	<!-- footer -->
+	<footer class="foot">
+		<div class="container">
+		<div class="head__menu">
+			<div class="head__navmenu">
+				<div class="head__menu_punct">
+					Технология
+				</div>
+				<div class="head__menu_punct">
+					Виды тележек
+				</div>
+				<div class="head__menu_punct">
+					О нас
+				</div>
+			</div>
+			<div class="head__button">
+				<input type="button" class="open-button" onclick="openForm()" value="Заказать обратный звонок">
+			</div>
+		</div>
+		<div class="foot__textblock">
+			<div class="foot__text">
+				ООО «Пром-Холдинг» <br>КБР, г. Нальчик, ул. Ватутина <strong>29</strong> «а»  ООО «Пром-Агро» <strong>346883</strong>, Ростовская обл.,<br> г. Батайск, Восточное шоссе, <strong>14</strong> офис <strong>316</strong>
+			</div>
+			<br>
+			<div class="foot__text">
+				Тел.: <a href="tel:79094121495" class="number">+7(909) 412-14-95</a> <br>
+				Многоканальный телефон: <br>
+				<a href="tel:78002015687" class="number">7(800) 201-56-87</a>
+			</div>
+		</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	</div>
+<script>
+	
+	function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+</html>

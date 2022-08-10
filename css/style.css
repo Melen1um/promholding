@@ -1,0 +1,595 @@
+/*Обнуление*/
+@import url('http://fonts.cdnfonts.com/css/corbel');
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body{
+	font-size: 16px;
+	background: #dcdce0;
+	font-family: 'Corbel';
+}
+.wrapper {
+	min-height: 100vh;
+	background-color: #121212eb;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	flex: 1 1 auto;
+}
+/* Header styles */
+.head {
+	font-size: 18px;
+	padding: 50px 0px;
+	background-color: #313233eb;
+	color: white;
+	flex: 0 1 auto;
+}
+.head__contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.number{
+	font-weight: bold;
+	display: block;
+	color: white;
+}
+.head__numbers {}
+.head__company {}
+.head__mail {}
+.head__mail a{
+	color: white;
+}
+.head__address {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.head__location {}
+.head__button {}
+.head__menu {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.head__menu_punct {}
+.head__navmenu {
+	flex: 0 1 60%;
+	display: flex;
+	justify-content: space-between;
+}
+.head__socials {
+	display: flex;
+}
+.social__media {
+	margin-right: 10px;
+}
+.open-button {
+  background-color: #9fe831;
+  font-size: 16px;
+  color: black;
+  padding: 12px 14px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+ /* position: fixed;
+  bottom: 23px;
+  right: 28px;*/
+  width: 210px;
+  border-radius: 40px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Добавить стили для контейнера формы */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.form-container input[type=text], .form-container input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/войти */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Добавить красный цвет фона для кнопки "Отмена" */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Добавить некоторые эффекты наведения на кнопки */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.form-color {
+	color: black;f
+}
+/* Header styles end */
+/* about Main */
+.container{
+	width: 80%;
+	margin: 0px auto;
+}
+.about{
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+}
+.title {
+	font-size: 34px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.about__main__block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about__title{
+	margin-bottom: 20px;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 30px;
+	display: flex;
+	justify-content: center;
+}
+.about__textblock{
+	padding: 0px 0px;
+	padding-right: 20px;
+	flex: 1 1 40%;
+}
+.about__image{
+	text-align: center;
+	margin-right: 40px;
+	flex: 1 1 50%;
+	min-height: 100%;
+	border: 3px solid #6dce0e;
+
+}
+.about__image img {
+	width: 100%;
+	min-height: 100%;
+}
+.about__description{
+	padding-left: 100px;
+	margin-bottom: 25px;
+	font-size: 24px;
+	color: #6dce0e;
+
+}
+.about__button{
+	margin-top: 25px;
+}
+.priority{
+
+	padding: 25px;
+	border: 1px solid #6dce0e;
+	background: white;
+	color: black;
+	border-radius: 30px;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.priority:hover{
+	color: white;
+	background: #0b1803;
+	border: 1px solid #0b1803;
+}
+.priority:before{
+  content: '✓';
+  position: relative;
+  top: 2px;
+}
+/* about main end */
+/* akif */
+.akif{
+	margin-top: 90px;
+	margin-bottom: 60px;
+}
+.akif__title{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.akif__descript{
+	text-align: justify;
+	font-size: 21px;
+	padding-left: 20px;
+	line-height: 28px;
+}
+.akif__info{
+	display: flex;
+	background-color: #0b1803;
+	border-radius: 90px;
+	padding: 30px;
+}
+.akif__imageblock{
+
+}
+.akif__center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.akif__photo{
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	color: black;
+	justify-content: center;
+	margin-bottom: 25px;
+	background: white;
+}
+.akif__photo img{
+}
+.akif__description{
+	text-align: center;
+}
+
+.akif__image{
+	text-align: center;
+	flex:1 1 50%;
+}
+.akif__image img{
+	width: 100%;
+}
+.akif__button{
+	text-align: center;
+	padding-top: 40px;
+
+}
+/* akif end */
+/* why */
+.why{
+	margin-top: 40px;
+}
+.why__main__block{
+	background-color: #0b1803;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+.why__title{
+	text-align: left;
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	line-height: 30px;
+
+}
+.why__textblock{
+	flex: 1 1 50%;
+	padding: 20px;
+}
+.why__text{
+	font-size: 18px;
+	text-align: justify;
+	line-height: 29px;
+}
+.why .akif__image{
+	border: 3px solid #6dce0e;
+}
+/* why end */
+/* main */
+.main {
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 60px;
+
+}
+.main .container {
+	border-radius: 15%;
+	padding: 35px;
+	padding-top: 50px;
+-webkit-box-shadow: 0px 0px 18px 18px rgba(255, 255, 255, 0.4);
+-moz-box-shadow: 0px 0px 18px 18px rgba(255, 255, 255, 0.4);
+box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
+}
+.main__general{
+	display: flex;
+	align-items: center;
+}
+.bold{
+	font-weight: bold;
+}
+.main__title{
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	flex: 1 1 50%;
+	text-align: justify;
+	padding: 0 20px;
+
+}
+.main__image{
+	flex: 1 1 50%;
+	margin-bottom: 30px;
+}
+.main__image img {
+	max-width: 100%;
+}
+.main__button{
+}
+/* main end */
+.center{
+	text-align: center !important;
+	line-height: 30px;
+}
+.big{
+	font-size: 26px;
+}
+.lime {
+	color: #6dce0e !important;
+}
+
+/*footer*/
+.foot{
+	display: flex;
+	align-items: center;
+	background-color: #313233eb;
+	color: white;
+	flex: 0 1 auto;
+	padding: 40px;
+	margin-top: 50px;
+	font-size: 18px;
+}
+.foot .number{
+	display: inline-block;
+}
+.foot__textblock{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.foot__text{
+	text-align: center;
+	line-height: 25px;
+}
+.foot .head__menu {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+.decor{
+	text-decoration: underline;
+	text-decoration-color: #6dce0e;
+	text-decoration-thickness: 6px;
+}
+/* footer end */
+/* review */
+.review{
+	margin-top: 90px;
+	margin-bottom: 60px;
+
+}
+.review .container{
+	border: 2px solid #6dce0e;
+	border-radius: 10px;
+}
+.review__info{
+	display: flex;
+	padding: 60px 70px;
+
+}
+   .slider__container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      counter-increment: slide;
+      position: relative;
+    }
+
+    .slider__item::before {
+      content: counter(slide) "/3";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+/* review end */
+/* infoblock */
+.infoblock {
+	margin-top: 80px;
+}
+.infoblock__title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 35px;
+	margin-bottom: 35px;
+
+}
+.infoblock__table{
+	display: flex;
+	justify-content: center;
+
+}
+table {
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+th {
+	border: 1px solid white;
+	padding: 9px;
+}
+tr {
+	border: 1px solid white;
+
+}
+td {
+	border: 1px solid white;
+	padding: 9px;
+}
+.infoblock__certificate{
+	display: flex;
+	margin-top: 30px;
+	padding: 0 70px;
+	justify-content: center;
+
+}
+.infoblock__image {
+
+}
+.infoblock__text{
+	flex: 1 1 auto;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
+
+}
+.infoblock__textblock{
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+}
+.infoblock__textblock .infoblock__title{
+	margin-bottom: 15px;
+}
+.infoblock__button{
+	flex: 0 1 auto;
+	text-align: center;
+}
+/* infoblock end */
+
+/* company block */
+.company{
+	margin-top: 90px;
+
+}
+.company__main{
+	display: flex;
+	justify-content: center;
+
+}
+.company__textblock{
+	flex: 1 1 60%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+
+}
+.company__texts{
+	flex: 1 1 auto;
+}
+.company__title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 35px;
+	margin-bottom: 15px;
+}
+.company__text{
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
+}
+.company__button{
+	flex: 0 1 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+.company__image{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid white;
+	border-radius: 60px;
+	flex: 1 1 45%;
+	height: 400px;
+}
+
+
+/* company block end */
+
+
