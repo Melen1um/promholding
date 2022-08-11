@@ -180,8 +180,8 @@ body{
 	margin: 0px auto;
 }
 .about{
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 120px;
+	margin-bottom: 120px;
 
 }
 .title {
@@ -253,8 +253,7 @@ body{
 /* about main end */
 /* akif */
 .akif{
-	margin-top: 90px;
-	margin-bottom: 60px;
+	margin-top: 60px;
 }
 .akif__title{
 	text-align: center;
@@ -316,7 +315,7 @@ body{
 /* akif end */
 /* why */
 .why{
-	margin-top: 40px;
+	margin-top: 70px;
 }
 .why__main__block{
 	background-color: #0b1803;
@@ -349,8 +348,7 @@ body{
 /* main */
 .main {
 	text-align: center;
-	margin-top: 90px;
-	margin-bottom: 60px;
+	margin-top: 150px;
 
 }
 .main .container {
@@ -439,8 +437,8 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 /* footer end */
 /* review */
 .review{
-	margin-top: 90px;
-	margin-bottom: 60px;
+	margin-top: 120px;
+	margin-bottom: 120px;
 
 }
 .review .container{
@@ -485,7 +483,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 /* review end */
 /* infoblock */
 .infoblock {
-	margin-top: 80px;
+	margin-top: 120px;
 }
 .infoblock__title {
 	text-align: center;
@@ -557,7 +555,7 @@ td {
 
 /* company block */
 .company{
-	margin-top: 90px;
+	margin-top: 150px;
 
 }
 .company__main{
