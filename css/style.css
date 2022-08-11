@@ -731,7 +731,6 @@ td {
 .advert__textimage{
 	height: 430px;
 	width: 45%;
-	background: white;
 	flex: 1 1 50%;
 	border-radius: 20px;
 		display: flex;
@@ -744,10 +743,7 @@ td {
 	padding-top: 15px;
 }
 .advert__image{
-	height: 400px;
-	border: 2px solid black;
 	width: 50%;
-	background: white;
 	margin: 20px;
 	border-radius: 20px;
 	display: flex;
