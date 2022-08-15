@@ -641,6 +641,8 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 /* infoblock */
 .infoblock {
 	margin-top: 120px;
+	background: url('../img/back.jpg');
+	background-repeat: no-repeat;
 }
 .infoblock__title {
 	text-align: center;
