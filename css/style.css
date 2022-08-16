@@ -211,9 +211,9 @@ body{
 .about__image{
 	text-align: center;
 	margin-right: 40px;
-	flex: 1 1 50%;
+	flex: 1 1 35%;
 	min-height: 100%;
-	border: 3px solid #6dce0e;
+	border: 1.5px solid #6dce0e;
 
 }
 .about__image img {
@@ -229,6 +229,7 @@ body{
 }
 .about__button{
 	margin-top: 25px;
+	text-align: center;
 }
 .priority{
 
