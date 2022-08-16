@@ -39,11 +39,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 body{
 	font-size: 16px;
-	background: #dcdce0;
 	font-family: 'Corbel';
 }
 .wrapper {
 	min-height: 100vh;
+	max-width: 100%;
+	overflow: hidden;
 	background-color: #121212eb;
 	color: white;
 	display: flex;
@@ -119,28 +120,28 @@ body{
 
 /* Всплывающая форма-скрыта по умолчанию */
 .form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+	  display: none;
+	  position: fixed;
+	  bottom: 0;
+	  right: 15px;
+	  border: 3px solid #f1f1f1;
+	  z-index: 9;
 }
 
 /* Добавить стили для контейнера формы */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+	  max-width: 300px;
+	  padding: 10px;
+	  background-color: white;
 }
 
 /* Поля ввода полной ширины */
 .form-container input[type=text], .form-container input[type=number] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+	  width: 100%;
+	  padding: 15px;
+	  margin: 5px 0 22px 0;
+	  border: none;
+	  background: #f1f1f1;
 }
 
 /* Когда входы получают фокус, сделайте что-нибудь */
@@ -151,24 +152,24 @@ body{
 
 /* Установите стиль для кнопки отправить/войти */
 .form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px 20px;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	  margin-bottom:10px;
+	  opacity: 0.8;
 }
 
 /* Добавить красный цвет фона для кнопки "Отмена" */
 .form-container .cancel {
-  background-color: red;
+  	background-color: red;
 }
 
 /* Добавить некоторые эффекты наведения на кнопки */
 .form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+  	opacity: 1;
 }
 .form-color {
 	color: black;
@@ -232,7 +233,6 @@ body{
 	text-align: center;
 }
 .priority{
-
 	padding: 25px;
 	border: 1px solid #6dce0e;
 	background: white;
@@ -247,9 +247,9 @@ body{
 	border: 1px solid #0b1803;
 }
 .priority:before{
-  content: '✓';
-  position: relative;
-  top: 2px;
+  	content: '✓';
+  	position: relative;
+  	top: 2px;
 }
 /* about main end */
 /* akif */
@@ -271,8 +271,8 @@ body{
 .akif__info{
 	display: flex;
 	-webkit-box-shadow: 0px 0px 18px 18px rgba(255, 255, 255, 0.4);
--moz-box-shadow: 0px 0px 18px 18px rgba(255, 255, 255, 0.4);
-box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
+	-moz-box-shadow: 0px 0px 18px 18px rgba(255, 255, 255, 0.4);
+	box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	border-radius: 90px;
 	padding: 30px;
 }
@@ -318,7 +318,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 /* akif end */
 /* why */
 .why{
-	margin-top: 90px;
+	margin-top: 130px;
 	background: url('../img/background.jpg');
 	background-repeat: no-repeat;
 }
@@ -353,8 +353,10 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	text-align: center;
 	margin-bottom: 25px;
 	border: 1px solid #6dce0e;
+	border-radius: 10px;
 }
 .why__textblock{
+	border-radius: 10px 0px 0px 10px;
 	font-size: 22px;
 	flex: 1 1 60%;
 	padding: 40px;
@@ -611,9 +613,9 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 
 }
 .review .container{
-	  border: 5px solid transparent;
-  border-image: linear-gradient(to left top,#6dce0e 10%,  transparent 30%, transparent 70%, #6dce0e 90%);
-  border-image-slice: 1;
+	border: 5px solid transparent;
+  	border-image: linear-gradient(to left top,#6dce0e 10%,  transparent 30%, transparent 70%, #6dce0e 90%);
+ 	border-image-slice: 1;
 	border-radius: 10px;
 }
 .review__info{
@@ -622,12 +624,12 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 
 }
    .slider__container {
-      padding-left: 0;
-      padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
     }
 
     .slider__items {
-      counter-reset: slide;
+    counter-reset: slide;
     }
 
     .slider__item {
@@ -640,15 +642,15 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
     }
 
     .slider__item::before {
-      content: counter(slide) "/3";
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      color: #fff;
-      font-style: italic;
-      font-size: 32px;
-      font-weight: bold;
-      display: block;
+    content: counter(slide) "/3";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
     }
 
 /* review end */
@@ -841,15 +843,15 @@ td {
 
 }
 .advert__number {
-	  font-size: 2em;
-	  font-weight: bold;
-	  margin-bottom: 20px;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 20px;
 	}
 .clearfix:before,
 .clearfix:after {
-	  content: " ";
+	content: " ";
 	  /* 1 */
-	  display: table;
+	display: table;
 	  /* 2 */
 }
 
@@ -857,8 +859,8 @@ td {
   	clear: both;
 }
 .viz {
-	  opacity: 1;
-	  transition: 1s;
+	opacity: 1;
+	transition: 1s;
 }
 .bl {
 	  margin: 0 15px;
