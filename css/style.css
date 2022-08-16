@@ -318,7 +318,10 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 /* why */
 .why{
 	margin-top: 90px;
+	background: url('../img/background.jpg');
+	background-repeat: no-repeat;
 }
+
 .why__main__block{
 	display: flex;
 	align-items: center;
@@ -335,44 +338,54 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 
 }
 .why__blocks{
-	display: flex;
+
 }
 .why__block{
-	margin-right: 40px;
-	padding: 40px 30px;
-	background: #0b1803;
-	padding-bottom: 60px;
-	border-radius: 50px;
-	text-align: justify;
-	font-size: 20px;
-}
-.why__image{
-	text-align: center;
-	margin-bottom: 25px;
-}
-.why__block img{
-	height: 80px;
+	display: flex;
+	margin-bottom: 85px;
 }
 .why__block:last-child{
-	margin-right: 0px;
+	margin-bottom: 30px;
+}
+.why__image{
+	flex: 1 1 40%;
+	text-align: center;
+	margin-bottom: 25px;
+	border: 1px solid orange;
 }
 .why__textblock{
-	flex: 1 1 50%;
-	padding: 20px;
-}
-.why__text{
-	font-size: 18px;
+	font-size: 22px;
+	flex: 1 1 60%;
+	padding: 40px;
 	text-align: justify;
-	line-height: 29px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid orange;
+	margin: 40px 0px;
+	background: white;
+	color: black;
 }
-.why__text:before{
-	content: '';
-	background-image: url('../img/question-mark.svg');
-	background-size: cover;
-	padding-right: 10px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background-repeat: no-repeat
+.why__block img{
+	height: 100%;
+	width: 100%;
+}
+.why__texttitle{
+	padding-bottom: 20px;
+	color: orange;
+	font-weight: bold;
+	font-size: 27px;
+}
+.why__bigtext{
+	font-size: 64px;
+	font-weight: bolder;
+	-webkit-text-stroke:2px #ff9c00;
+	color: transparent;
+}
+.first__question{
+	position: relative;
+	top: 90px;
+	left: 280px;
 }
 .why__wrapper{
 	display: flex;
@@ -641,7 +654,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 /* infoblock */
 .infoblock {
 	margin-top: 120px;
-	background: url('../img/back.jpg');
+	background: url('../img/background.jpg');
 	background-repeat: no-repeat;
 }
 .infoblock__title {
