@@ -56,10 +56,11 @@ body{
 /* Header styles */
 .head {
 	font-size: 18px;
-	padding: 50px 0px;
+	padding: 30px 0px;
 	background-color: #313233eb;
 	color: white;
 	flex: 0 1 auto;
+	border-bottom: 1px solid #6dce0e;
 }
 .head__contact {
 	display: flex;
@@ -91,7 +92,11 @@ body{
 	justify-content: space-around;
 	align-items: center;
 }
-.head__menu_punct {}
+.head__menu_punct {
+	border: 1px solid #6dce0e;
+	border-radius: 50px;
+	padding: 10px 20px;
+}
 .head__navmenu {
 	flex: 0 1 60%;
 	display: flex;
@@ -214,12 +219,14 @@ body{
 	margin-right: 40px;
 	flex: 1 1 35%;
 	min-height: 100%;
-	border: 1.5px solid #6dce0e;
+	border: 1px solid #6dce0e;
+	border-radius: 10px;
 
 }
 .about__image img {
 	width: 100%;
 	min-height: 100%;
+	border-radius: 10px;
 }
 .about__description{
 	padding-left: 100px;
@@ -233,12 +240,13 @@ body{
 	text-align: center;
 }
 .priority{
-	padding: 25px;
+	padding: 18px;
 	border: 1px solid #6dce0e;
 	background: white;
 	color: black;
-	border-radius: 30px;
-	font-size: 18px;
+	border-radius: 20px;
+	font-size: 24px;
+	font-weight: 600;
 	margin-bottom: 15px;
 }
 .priority:hover{
@@ -331,7 +339,7 @@ body{
 }
 .why__title{
 	text-align: left;
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: bold;
 	padding-bottom: 30px;
 	line-height: 30px;
@@ -356,7 +364,6 @@ body{
 	border-radius: 10px;
 }
 .why__textblock{
-	border-radius: 10px 0px 0px 10px;
 	font-size: 22px;
 	flex: 1 1 60%;
 	padding: 40px;
@@ -369,9 +376,16 @@ body{
 	background: white;
 	color: black;
 }
+.left{
+	border-radius: 15px 0px 0px 15px;
+}
+.right{
+	border-radius: 0px 15px 15px 0px;
+}
 .why__block img{
 	height: 100%;
 	width: 100%;
+	font-family: serif;
 }
 .why__texttitle{
 	padding-bottom: 20px;
@@ -448,9 +462,12 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 .main__image{
 	flex: 1 1 50%;
 	margin-bottom: 30px;
+	border-radius: 10px;
+	border: 1px solid #6dce0e;
 }
 .main__image img {
 	width: 100%;
+	border-radius: 10px;
 }
 .right{
 	padding-right: 20px;
@@ -479,6 +496,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 
 /*footer*/
 .foot{
+	border-top: 1px solid #6dce0e;
 	display: flex;
 	align-items: center;
 	background-color: #313233eb;
@@ -561,7 +579,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 
 }
 .foot__map{
-
+	border: 1px solid #6dce0e;
 }
 .foot__address{
 	padding-bottom: 18px;
@@ -698,14 +716,15 @@ td {
 }
 .infoblock__image {
 	margin-top: 20px;
+	border: 1px solid #6dce0e;
 }
 .infoblock__image img{
 	width: 100%;
-	height: 600px;
+	height: 400px;
 }
 
-.second img:hover{
-	left: 0px;
+.second {
+	margin-left: 10px;
 }
 .infoblock__text{
 	flex: 1 1 auto;
@@ -813,12 +832,19 @@ td {
 	color: black;
 	justify-content: center;
 	font-size: 24px;
+	border: 1px solid #6dce0e;
+}
+.advert__textimage img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
 }
 .advert__obr{
 	padding-top: 15px;
 	font-size: 28px;
 }
 .advert__image{
+	border: 1px solid #6dce0e;
 	width: 50%;
 	margin: 20px;
 	border-radius: 20px;
@@ -827,6 +853,10 @@ td {
 	color: black;
 	justify-content: center;
 	font-size: 24px;
+}
+.advert__image img{
+	width: 100%;
+	border-radius: 20px;
 }
 .advert__image:last-child{
 	margin-right: 0px;
@@ -947,8 +977,6 @@ td {
 }
 .teleg__image {
 	flex: 1 1 50%;
-	height: 300px;
-	border: 2px solid white;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -957,6 +985,50 @@ td {
 	left: -60px;
 	top: 50px;
 	z-index: 2;
+}
+.teleg #myForm {
+	width: 100%;
+}
+.teleg .form-container {
+	  min-width: 100% !important;
+	  padding: 15px;
+	  background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.teleg .form-container input[type=text], .form-container input[type=number] {
+	  width: 100%;
+	  padding: 15px;
+	  margin: 5px 0 5px 0;
+	  border: none;
+	  background: #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.teleg .form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/войти */
+.teleg .form-container .btn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px 20px;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	  margin-bottom:10px;
+	  opacity: 0.8;
+}
+
+
+/* Добавить некоторые эффекты наведения на кнопки */
+.teleg .form-container .btn:hover, .open-button:hover {
+  	opacity: 1;
+}
+.teleg .form-color {
+	color: black;
 }
 
 /* teleg end */
