@@ -1007,6 +1007,7 @@ td {
 	  min-width: 100% !important;
 	  padding: 15px;
 	  background-color: white;
+	  border-radius: 15px;
 }
 
 /* Поля ввода полной ширины */
