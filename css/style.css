@@ -362,6 +362,10 @@ body{
 	margin-bottom: 25px;
 	border: 1px solid #6dce0e;
 	border-radius: 10px;
+	height: 350px;
+}
+.why__image img{
+	border-radius: 10px;
 }
 .why__textblock{
 	font-size: 22px;
