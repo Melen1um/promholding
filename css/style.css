@@ -966,11 +966,11 @@ td {
 
 /* teleg */
 .teleg {
-	margin-top: 50px;
+	margin-top: 200px;
 	margin-bottom: 150px;
 }
 .teleg .container{
-	width: 60%;
+	width: 65%;
 }
 .teleg__main {
 	display: flex;
@@ -979,15 +979,20 @@ td {
 .teleg__textblock{
 	flex: 1 1 50%;
 	display: flex;
-	align-items: center;
 	padding: 20px;
-	padding-right: 50px;
-	border: 2px solid #6dce0e ;
+	padding-right: 10px;
+	border: 1px solid #6dce0e ;
+	background: url('../img/image.jpg');
 }
 .teleg__text{
-	font-size: 28px;
+	font-size: 32px;
 	line-height: 35px;
-
+	position: relative;
+	top: -100px;
+	left: 70px;
+}
+.gigantic{
+	font-size: 40px;
 }
 .teleg__image {
 	flex: 1 1 50%;
@@ -1005,9 +1010,10 @@ td {
 }
 .teleg .form-container {
 	  min-width: 100% !important;
-	  padding: 15px;
+	  padding: 35px;
 	  background-color: white;
 	  border-radius: 15px;
+	  border: 1.5px solid #6dce0e;
 }
 
 /* Поля ввода полной ширины */
@@ -1017,6 +1023,7 @@ td {
 	  margin: 5px 0 5px 0;
 	  border: none;
 	  background: #f1f1f1;
+	  border-radius: 10px;
 }
 
 /* Когда входы получают фокус, сделайте что-нибудь */
@@ -1035,6 +1042,8 @@ td {
 	  width: 100%;
 	  margin-bottom:10px;
 	  opacity: 0.8;
+	  border-radius: 10px;
+	  margin-top: 10px;
 }
 
 
@@ -1044,6 +1053,8 @@ td {
 }
 .teleg .form-color {
 	color: black;
+	font-size: 25px;
+	padding-bottom: 10px;
 }
 
 /* teleg end */
