@@ -141,7 +141,7 @@ body{
 }
 
 /* Поля ввода полной ширины */
-.form-container input[type=text], .form-container input[type=number] {
+.form-container input[type=text], .form-container input[type=tel] {
 	  width: 100%;
 	  padding: 15px;
 	  margin: 5px 0 22px 0;
@@ -150,7 +150,7 @@ body{
 }
 
 /* Когда входы получают фокус, сделайте что-нибудь */
-.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+.form-container input[type=text]:focus, .form-container input[type=tel]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -1017,7 +1017,7 @@ td {
 }
 
 /* Поля ввода полной ширины */
-.teleg .form-container input[type=text], .form-container input[type=number] {
+.teleg .form-container input[type=text], .form-container input[type=tel] {
 	  width: 100%;
 	  padding: 15px;
 	  margin: 5px 0 5px 0;
@@ -1027,7 +1027,7 @@ td {
 }
 
 /* Когда входы получают фокус, сделайте что-нибудь */
-.teleg .form-container input[type=text]:focus, .form-container input[type=number]:focus {
+.teleg .form-container input[type=text]:focus, .form-container input[type=tel]:focus {
   background-color: #ddd;
   outline: none;
 }
