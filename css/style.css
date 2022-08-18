@@ -994,6 +994,9 @@ td {
 .gigantic{
 	font-size: 40px;
 }
+.notgigantic{
+	font-size: 38px;
+}
 .teleg__image {
 	flex: 1 1 50%;
 	width: 100%;
