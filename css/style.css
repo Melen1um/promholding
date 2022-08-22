@@ -251,6 +251,7 @@ body{
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 15px;
+	transition: background 0.3s linear;
 }
 .priority:hover{
 	color: white;
@@ -269,8 +270,8 @@ body{
 }
 .akif__title{
 	text-align: center;
-	margin-bottom: 30px;
-	font-size: 25px;
+	margin-bottom: 10px;
+	font-size: 28px;
 	font-weight: bold;
 }
 .akif__descript{
@@ -350,6 +351,7 @@ body{
 .why__blocks{
 
 }
+
 .why__block{
 	display: flex;
 	margin-bottom: 85px;
@@ -588,6 +590,9 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 }
 .foot__contacts{
 
+}
+.big {
+	font-size: 28px;
 }
 .foot__map{
 	border: 1px solid #6dce0e;
