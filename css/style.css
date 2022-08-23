@@ -60,7 +60,7 @@ body{
 .head {
 	font-size: 18px;
 	padding: 30px 0px;
-	background-color: #070e17;
+	background-color: #0d131a;
 	color: white;
 	flex: 0 1 auto;
 	border-bottom: 1px solid #6dce0e;
@@ -274,6 +274,7 @@ body{
 	font-size: 24px;
 	font-weight: 400;
 	margin-bottom: 15px;
+	margin-right: 60px;
 	transition: background 0.3s linear;
 	text-align: center;
 }
@@ -542,7 +543,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	border-top: 1px solid #6dce0e;
 	display: flex;
 	align-items: center;
-	background-color: #070e17;
+	background-color: #0d131a;
 	color: white;
 	flex: 0 1 auto;
 	padding-top: 40px;
