@@ -5,16 +5,9 @@
 	<link rel="stylesheet" href="css/chief-slider.min.css">
 	<title> Project </title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	 <script defer src="js/chief-slider.min.js"></script>
-	  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = new ChiefSlider('.slider', {
-        loop: true
-      });
-    });
-  </script>
 </head>
 <body>
+	<div class="popup"></div>
 <div class="wrapper">
 	<!-- Шапка сайта -->
 	<header class="head">
@@ -45,7 +38,7 @@
 					<input type="tel" placeholder="Номер телефона" name="number" required>
 					<input type="text" placeholder="Комментарий" name="Comment" required>
 				    <button type="submit" class="btn">Заказать</button>
-				    <button type="submit" class="btn cancel" onclick="closeForm()">Закрыть</button>
+				    <button type="submit" class="cancel" onclick="closeForm()">X</button>
 				  </form>
 				</div>
 			</div>
@@ -161,7 +154,7 @@
 		<div class="container">
 			<div class="why__main__block">
 			<div class="why__text">
-				<div class="why__title">Почему иногда бывает так сложно выбирать  сельскохозяйственную технику?<br> Потому что никто не предлагает то, что нужно конкретно вам.<br><br>
+				<div class="why__title">Почему иногда бывает так сложно выбирать  сельскохозяйственную технику? <br>Потому что никто не предлагает то, что нужно конкретно вам.<br><br>
 					Давайте исправлять
 				</div>
 				<div class="why__blocks">	
@@ -207,16 +200,15 @@
 	</div>
 	<!-- why end -->
 	<!-- main -->
-
 	<div class="main">
-			<div class="main__title center lime notgigantic" id="goto"><b>
+			<div class="main__title first__title center lime notgigantic" id="goto"><b>
 					Но давайте сначала разберем, <br> почему эти тележки для жатки идеальны <br>по соотношению цены и качества.
 				</b></div>	<br>
 		<div class="container">
 				<div class="main__title center bold big"><b>Вы тратите миллионы на полный комплект сельхозтехники: комбайны, тракторы, жатки и т.д. Не говоря уже об удобрениях, зарплатах и налогах. <br>   Поэтому, мы понимаем, что за тележку для жатки вам не хочется переплачивать. Она должна быть простой, доступной, но абсолютно надежной. Помня об этом, мы создавали эти тележки.</b></div>
 				<div class="main__general">
 					<div class="main__image">
-						<img src="img/main1.png" alt="">
+						<img src="img/main1.jpg" alt="">
 					</div>
 					<div class="main__title left">
 						Производством тележки занимались наши инженеры,  создававшие технику для немецкого бренда сельскохозяйственной техники <span class="lime bold">Claas</span>
@@ -232,7 +224,8 @@
 					</div>
 				</div>
 				<div class="main__general">
-					<div class="main__image white">
+					<div class="main__image">
+						<img src="img/main3.jpg" alt="">
 											</div>
 					<div class="main__title left">
 						Техника, сделанная из этой стали, спокойно выдерживает эксплуатацию в температурном диапазоне<span class="lime bold"> от - 40 до + 150 градусов по Цельсию.</span>
@@ -248,8 +241,8 @@
 					</div>
 				</div>
 				<div class="main__general">
-					<div class="main__image white">
-						
+					<div class="main__image">
+						<img src="img/main5.jpg" alt="">
 					</div>
 					<div class="main__title left">
 						Каждое колесо выдерживает нагрузку в 1850 киллограм.  А <span class="lime bold">покрышки сделаны из 14-слойной  сельскохозяйственной шины</span>, чтобы защитить колеса от проколов
@@ -281,9 +274,9 @@
 
 			<div class="akif__center">
 			<div class="akif__descript">
-				<div class="bold lime big center"> У нас много поставщиков сельхозтехники, но тележки для жатки мы берем в ГК Промхолдинг.</div>
-Мы закупали много техники в Башкирии и в г. Орел, кроме того, на юге России много поставщиков тележек для жатки. Но с Эльдаром из ГК Промхолдинг мы работаем давно и тележки берем у них из-за сроков, цен и качества. Кроме того, есть такая важная вещь, как человеческое обслуживание – и это еще одно ваше преимущество.
-			</div>
+						<div class="bold lime big center"> У нас много поставщиков сельхозтехники, но тележки для жатки мы берем в ГК Промхолдинг.</div>
+		Мы закупали много техники в Башкирии и в г. Орел, кроме того, на юге России много поставщиков тележек для жатки. Но с Эльдаром из ГК Промхолдинг мы работаем давно и тележки берем у них из-за сроков, цен и качества. Кроме того, есть такая важная вещь, как человеческое обслуживание – и это еще одно ваше преимущество.
+					</div>
 							<div class="review__description">
 				Дмитрий Бобров, дилер CNH +7 985 845 99 18
 				</div>
@@ -367,6 +360,37 @@
 		</div>
 	</div>
 	<!-- infoblock end -->
+	<!-- formblock -->
+	<div class="formblock">
+		<div class="container">
+			<div class="formblock__title">
+				Какую задачу вы хотите решить?
+			</div>
+			<div class="formblock__form">
+					 <form action="/action_page.php" class="formblock__block">
+					 	<div class="formblock__punct">
+					 	<p class="formblock__label">Ваш email</p>
+				 		<input type="email" class="formblock__input" placeholder="E-mail" name="mail" required>
+				 		</div>
+				 		<div class="formblock__punct">
+				 		<p class="formblock__label">Ваше имя</p>
+				    <input type="text"  class="formblock__input" placeholder="Имя" name="first_name" required>
+				    </div>
+				    <div class="formblock__punct">
+				    <p class="formblock__label">Ваш телефон</p>
+						<input id="online_phone" class="formblock__input"  name="phone" type="tel" maxlength="50"
+			        required="required"
+			         value="+7 (___) ___-__-__"
+			         pattern="\+7\s? [\(]{0,1}9[0-9]{2} [\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+			         placeholder="+7(___)___-__-__" style="font-family:Arial;">
+			         </div>
+				    <button type="submit" class="formblock__btn">Получить консультацию</button>
+				  </form>
+			</div>
+		</div>
+	</div>
+
+	<!-- formblock end -->
 	<!-- about company -->
 	<div class="company">
 		<div class="container" id="aboutus">
@@ -398,8 +422,8 @@
 			
 			<div class="akif__center">
 			<div class="akif__descript">
-				<div class="bold lime center big">По рекомендации соседа взял себе одну тележку, одну уборку уже сделал. </div>
-Искал тележки для жатки и первый барьер, с которым я столкнулся – это цена – больше полумиллиона за тележку. Но оказалось, что у мой сосед купил в 2 раза дешевле, а по качеству ничем не хуже. По его рекомендации взял себе одну тележку. Уборку по зерновым уже сделали, осталось еще по подсолнухам. Спасибо, все идет хорошо. 
+						<div class="bold lime center big">По рекомендации соседа взял себе одну тележку, одну уборку уже сделал. </div>
+		Искал тележки для жатки и первый барьер, с которым я столкнулся – это цена – больше полумиллиона за тележку. Но оказалось, что у мой сосед купил в 2 раза дешевле, а по качеству ничем не хуже. По его рекомендации взял себе одну тележку. Уборку по зерновым уже сделали, осталось еще по подсолнухам. Спасибо, все идет хорошо. 
 			</div>
 				<div class="review__description">
 				ИП Ляховский Максим +7 951 513 90 05
@@ -507,10 +531,10 @@
 		</div>
 	</div>
 	<!-- eldar end -->
-</main>
-	<!-- footer -->
-	<footer class="foot">
-		<div class="container">
+	</main>
+		<!-- footer -->
+		<footer class="foot">
+			<div class="container">
 			<div class="foot__block">
 				<div class="foot__logo">
 					<img src="img/logo.png" alt="">
@@ -595,14 +619,35 @@
 	<!-- footer end -->
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div class="callBack">
+		<div class="callBack__body">
+			<div class="callBack__icon">
+				<img src="img/headphone.svg" alt="">
+			</div>
+			<a href="tel:+78002015687" class="callBack__phone">
+        <img src="img/phone.svg" alt="">
+      </a>
+      <a href="https://wa.me/78002015687?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" class="callBack__whatsApp">
+        <img src="img/whatsapp.png" alt="">
+      </a>
+      <a href="mailto:info@prom-holding.com" class="callBack__mail">
+        <img src="img/email.svg" alt="">
+      </a>
+		</div>
+</div>
+
 <script>
 	
 	function openForm() {
   document.getElementById("myForm").style.display = "block";
+  document.querySelector(".popup").classList.toggle('b__popup');
+  document.querySelector("body").classList.toggle('hidden');
 	}
 
 	function closeForm() {
 	  document.getElementById("myForm").style.display = "none";
+	   document.querySelector(".popup").classList.toggle('b__popup');
+	    document.querySelector("body").classList.toggle('hidden');
 	}
 	/* счетчик */
 	var time = 2,
@@ -635,7 +680,7 @@
 	    }
 	  });
 	});
-/* счетчик конец */
+	/* счетчик конец */
 	/* валидация номера телефона */
 	function setCursorPosition(pos, e) {
     e.focus();
@@ -670,6 +715,22 @@
  
   });
   /* конец валидации */
+  /* trigger */
+
+    let btn = document.querySelector('.callBack__icon');
+    let phone = document.querySelector('.callBack__phone');
+    let whatsApp = document.querySelector('.callBack__whatsApp');
+    let mail = document.querySelector('.callBack__mail');
+
+    btn.onclick = function () {
+      phone.classList.toggle('active')
+      whatsApp.classList.toggle('active')
+      mail.classList.toggle('active')
+    }
+
+  
+
+  /* trigger end */
 </script>
 </body>
 </html>
