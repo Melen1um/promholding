@@ -404,6 +404,7 @@ body{
 	padding-bottom: 0px;
 	text-align: justify;
 	display: flex;
+	font-weight: 500;
 	flex-direction: column;
 	justify-content: center;
 	border: 1px solid #6dce0e;
@@ -424,7 +425,7 @@ body{
 }
 .why__texttitle{
 	padding-bottom: 20px;
-	color: #6dce0e;
+	color: #5dad0c;
 	font-weight: bold;
 	font-size: 29px;
 }
