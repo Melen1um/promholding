@@ -6,7 +6,6 @@
 	<title> Project </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- bootstrap	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
 </head>
 <body>
 	<div class="popup"></div>
@@ -46,7 +45,12 @@
 			</div>
 		</div>
 		<div class="head__menu">
-			<div class="head__navmenu">
+			<div class="menu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="head__navmenu menu">
 				<div class="head__menu_punct">
 					<a href="#goto">Технология</a>
 				</div>
@@ -71,7 +75,7 @@
 	<!-- Конец шапки сайта -->
 	<main class="content">
 	<!-- about main block -->
-	<div class="about">
+	<section class="about">
 			<div class="container">
 			<h1 class="title notgigantic">
 				За  <span class="lime">2</span>  года мы продали <span class="lime">317</span> тележек для жатки<br> Мы хотим продавать <span class="lime">1000</span> штук в год.
@@ -85,10 +89,6 @@
 					<br>
 					Почему мы думаем, что вы тоже захотите у нас купить тележку?
 				</h1>
-				<!--
-				<p class="about__description">
-					- Даем гарантию 2 года. <br>- Доставка по РФ от 1 дня.<br>- Оплата после поставки. <br>- Сначала испытайте, потом платите.
-				</p> -->
 				<div class="priority">
 					Даем гарантию 2 года
 				</div>
@@ -105,42 +105,15 @@
 				<input type="button" value="Оставить заявку" class="open-button">
 			</div>
 			</div>
-	</div>
-	<!-- about main block end -->
-	<!-- Akif block -->
-	<!--<div class="akif">
-					<div class="container">
-	
-		<div class="akif__info">
-
-			<div class="akif__imageblock">
-				<div class="akif__photo">
-				Фотка Акифа
-				</div>
-				<div class="akif__description">
-					<strong>Акиф Абдуллаев<br> инженер</strong> ФГБНУ Национальный центр зерна имени П. П. Лукьяненко<br> 8-995-207-08-37
-				</div>
-
-			</div>
-			<div class="akif__center">
-					<div class="akif__title">
-			"Я сравнивал тележки для жатки  5 производителей и выбрал тележки Пром Холдинг по лучшему соотношению цены и качества"
-		</div>
-			<div class="akif__descript">Искал двухосную тележку, устойчивую на грунтовых дорогах для наших 7-метровых жаток Ростсельмаша.<br>  Изучал все: и качество металла и грузоподьемность, и конечно, цену. Понравилась конструкция тележек Промхолдинг. В итоге купил 5 штук</div>
-			<div class="akif__button">
-			<input type="button" value="Связаться с нами" class="open-button">
-		</div>
-		</div>
-		</div>
-		</div>
-	</div>-->
-	<div class="review">
+	</section>
+	<!-- review akif -->
+	<section class="review">
 		<div class="container">
               <div class="review__info">
 			
 			<div class="akif__center">
 			<div class="akif__title lime">
-			Я сравнивал тележки для жатки  5 производителей и выбрал тележки Пром Холдинг по лучшему соотношению цены и качества
+			Я сравнивал тележки для жатки  5 производителей и выбрал тележки ГК Пром Холдинг по лучшему соотношению цены и качества
 		</div>
 			<div class="akif__descript">Искал двухосную тележку, устойчивую на грунтовых дорогах для наших 7-метровых жаток Ростсельмаша.<br>  Изучал все: и качество металла и грузоподьемность, и конечно, цену. Понравилась конструкция тележек Промхолдинг. В итоге купил 5 штук</div>
 				<div class="review__description center">
@@ -149,10 +122,10 @@
 		</div>
   		</div>
 		</div>
-		</div>
+		</section>
 	<!-- akif end -->
 	<!-- why -->
-	<div class="why">
+	<section class="why">
 		<div class="container">
 			<div class="why__main__block">
 			<div class="why__text">
@@ -162,7 +135,6 @@
 				<div class="why__blocks">	
 				<div class="why__block ">
 					<div class="why__textblock left">
-						<div class="why__texttitle">Срок службы</div>
 						Вы хотите тележку для жатки, способную ездить как по бездорожью так и по трассе с эксплуатационным сроком 8 лет?
 						<div class="why__bigtext first__question">ВОПРОС 1</div>
 					</div>
@@ -175,18 +147,12 @@
 					<img src="img/why2.jpg" alt="">
 				</div>
 				<div class="why__textblock right">
-					<div class="why__texttitle">
-						Грузоподъемность
-					</div>
 					Хотите, чтобы тележка спокойно могла перевозить и хранить жатки общим весом до 5,5 тонн и не ломаться и гнуться при тряске?
 					<div class="why__bigtext first__question">ВОПРОС 2</div>
 				</div>
 				</div>
 				<div class="why__block">
 					<div class="why__textblock left">
-						<div class="why__texttitle">
-							Гарантия
-						</div>
 					Но самое главное - вы хотите гарантию на тележку 2 года, и заплатить только после получения и испытания тележки на деле?
 					<div class="why__bigtext first__question">ВОПРОС 3</div>
 					</div>
@@ -199,10 +165,10 @@
 		</div>
 		</div>
 		</div>
-	</div>
+	</section>
 	<!-- why end -->
 	<!-- main -->
-	<div class="main">
+	<section class="main">
 			<div class="main__title first__title center lime notgigantic" id="goto"><b>
 					Но давайте сначала разберем, <br> почему эти тележки для жатки идеальны <br>по соотношению цены и качества.
 				</b></div>	<br>
@@ -267,10 +233,10 @@
 					<input type="button" value="Получить консультацию" class="open-button">
 				</div>
 		</div>
-	</div>
+	</section>
 	<!-- main end -->
 	<!-- reviews -->
-	<div class="review">
+	<section class="review">
 		<div class="container">
               <div class="review__info">
 
@@ -280,15 +246,15 @@
 		Мы закупали много техники в Башкирии и в г. Орел, кроме того, на юге России много поставщиков тележек для жатки. Но с Эльдаром из ГК Промхолдинг мы работаем давно и тележки берем у них из-за сроков, цен и качества. Кроме того, есть такая важная вещь, как человеческое обслуживание – и это еще одно ваше преимущество.
 					</div>
 							<div class="review__description">
-				Дмитрий Бобров, дилер CNH +7 985 845 99 18
+				Дмитрий Бобров, дилер CNH <br>+7 985 845 99 18
 				</div>
 		</div>
   		</div>
 		</div>
-		</div>
+		</section>
 	<!-- reviews end -->
 	<!-- infoblock -->
-	<div class="infoblock" id="telegs">
+	<section class="infoblock" id="telegs">
 		<div class="container">
 		<h2 class="infoblock__title notgigantic">
 			Тележки универсальны, ширина захвата от 5 до 12 метров.  Подойдут для любого производителя и типа жаток.
@@ -349,21 +315,12 @@
 			<div class="infoblock__image second">
 				<img src="img/diplom.jpg" alt="">
 			</div>
-			<!--<div class="infoblock__textblock">
-				<div class="infoblock__text">
-					<h1 class="infoblock__title">Lorem ipsum, dolor sit amet.</h1>
-					Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Labore exercitationem, at laborum omnis mollitia maiores quisquam itaque eveniet repellendus libero tempora. Natus quod delectus, laudantium quo unde repudiandae, quam optio ipsum soluta nulla vero atque blanditiis voluptatibus fuga? Ipsam minus eius eos necessitatibus laborum quasi sint nobis, amet possimus, eum aut, cum ea. Architecto hic quia quae veniam magnam, beatae sed debitis aliquam unde perferendis, quam facilis rem. Eius et, veniam ducimus itaque officia ad nam dolor minima at reiciendis autem exercitationem possimus repellat quas non velit minus labore ab laboriosam dolore repudiandae eligendi, aut. Nulla vitae perspiciatis animi vel dicta vero ratione nemo culpa blanditiis alias sed quae ab ut rem similique, laudantium minima. Explicabo officiis, possimus at quidem, quibusdam itaque mollitia veritatis adipisci aperiam velit, non fugit voluptates.
-				</div>
-				<div class="infoblock__button">
-					<input type="button" class="open-button" value="Узнать цены">
-				</div>
-			</div>-->
 		</div>
 		</div>
-	</div>
+	</section>
 	<!-- infoblock end -->
 	<!-- formblock -->
-	<div class="formblock">
+	<section class="formblock">
 		<div class="container">
 			<div class="formblock__title">
 				Какую задачу вы хотите решить?
@@ -393,11 +350,10 @@
 				  </form>
 			</div>
 		</div>
-	</div>
-
+	</section>
 	<!-- formblock end -->
 	<!-- about company -->
-	<div class="company">
+	<section class="company">
 		<div class="container" id="aboutus">
 			<div class="company__main">
 			<div class="company__textblock">
@@ -406,7 +362,7 @@
 					"Мы - не гиганты производства  сельхозоборудования. Но зато, в отличие от гигантов, наши тележки всегда в наличии."
 				</div>
 				<div class="company__text">
-					У нас небольшое компактное производство - всего 9 человек и всего один товар -тележки для жатки. Но наши тележки всегда в наличии. Почему? Стабильные, равномерные заказы круглый год. В несезон нам не нужно собирать общий тираж  из заказов нескольких клиентов ради того, чтобы выдернуть мастеров из других производственных линий,  например, комбайнерных, где они в основном заняты. Это заставляет клиентов ждать месяцами. Мы этого не хотим, поэтому заняты только тележками и производим их круглый год. Закажите сейчас - получите ее сразу.
+					У нас небольшое компактное производство - всего 9 человек и всего один товар - тележки для жатки. Но наши тележки всегда в наличии. Почему? Стабильные, равномерные заказы круглый год. В несезон нам не нужно собирать общий тираж  из заказов нескольких клиентов ради того, чтобы выдернуть мастеров из других производственных линий,  например, комбайнерных, где они в основном заняты. Это заставляет клиентов ждать месяцами. Мы этого не хотим, поэтому заняты только тележками и производим их круглый год. Закажите сейчас - получите ее сразу.
 				</div>
 				</div>
 				<div class="company__button">
@@ -418,10 +374,10 @@
 			</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<!-- about company end -->
 	<!-- review second -->
-	<div class="review">
+	<section class="review">
 		<div class="container">
               <div class="review__info">
 			
@@ -431,15 +387,15 @@
 		Искал тележки для жатки и первый барьер, с которым я столкнулся – это цена – больше полумиллиона за тележку. Но оказалось, что у мой сосед купил в 2 раза дешевле, а по качеству ничем не хуже. По его рекомендации взял себе одну тележку. Уборку по зерновым уже сделали, осталось еще по подсолнухам. Спасибо, все идет хорошо. 
 			</div>
 				<div class="review__description">
-				ИП Ляховский Максим +7 951 513 90 05
+				ИП Ляховский Максим <br>+7 951 513 90 05
 				</div>
 		</div>
   		</div>
 		</div>
-		</div>
+		</section>
 	<!-- review second end -->
 	<!-- advert -->
-	<div class="advert">
+	<section class="advert">
 		<div class="container">
 			<div class="advert__title notgigantic">
 				Нужны жатки для уборки подсолнечника, зерноуборочные комбайны и рапсовые столы?
@@ -483,10 +439,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<!-- advert end -->
 	<!-- teleg -->
-	<div class="teleg">
+	<section class="teleg">
 			<div class="container">
 				<div class="teleg__main">
 					<div class="teleg__textblock">
@@ -515,10 +471,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	<!-- teleg end -->
 	<!-- eldar -->
-	<div class="company">
+	<section class="company">
 		<div class="container">
 			<div class="eldar__main">
 				<div class="eldar__image">
@@ -537,7 +493,7 @@
 
 			</div>
 		</div>
-	</div>
+	</section>
 	<!-- eldar end -->
 	</main>
 		<!-- footer -->
@@ -592,41 +548,13 @@
 			</div>
 			<div class="foot__block">
 				<div class="foot__map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2714.0102685159545!2d39.77351681573635!3d47.1380648791563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3bcb9ada4db17%3A0x1b542d29d3d17678!2z0JLQvtGB0YLQvtGH0L3QvtC1INGILiwgMTQsINCR0LDRgtCw0LnRgdC6LCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDM0Njg4NA!5e0!3m2!1sru!2s!4v1660204743219!5m2!1sru!2s" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2714.0102685159545!2d39.77351681573635!3d47.1380648791563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3bcb9ada4db17%3A0x1b542d29d3d17678!2z0JLQvtGB0YLQvtGH0L3QvtC1INGILiwgMTQsINCR0LDRgtCw0LnRgdC6LCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDM0Njg4NA!5e0!3m2!1sru!2s!4v1660204743219!5m2!1sru!2s" width="370" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
-		<!--<div class="head__menu">
-			<div class="head__navmenu">
-				<div class="head__menu_punct">
-					Технология
-				</div>
-				<div class="head__menu_punct">
-					Виды тележек
-				</div>
-				<div class="head__menu_punct">
-					О нас
-				</div>
-			</div>
-			<div class="head__button">
-				<input type="button" class="open-button" onclick="openForm()" value="Заказать обратный звонок">
-			</div>
-		</div>
-		<div class="foot__textblock">
-			<div class="foot__text">
-				ООО «Пром-Холдинг» <br>КБР, г. Нальчик, ул. Ватутина <strong>29</strong> «а»  ООО «Пром-Агро» <strong>346883</strong>, Ростовская обл.,<br> г. Батайск, Восточное шоссе, <strong>14</strong> офис <strong>316</strong>
-			</div>
-			<br>
-			<div class="foot__text">
-				Тел.: <a href="tel:79094121495" class="number">+7(909) 412-14-95</a> <br>
-				Многоканальный телефон: <br>
-				<a href="tel:78002015687" class="number">7(800) 201-56-87</a>
-			</div>
-		</div>-->
 		</div>
 	</footer>
 	<!-- footer end -->
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <div class="callBack">
 		<div class="callBack__body">
 			<div class="callBack__icon">
@@ -643,9 +571,8 @@
       </a>
 		</div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-	
 	function openForm() {
   document.getElementById("myForm").style.display = "block";
   document.querySelector(".popup").classList.toggle('b__popup');
@@ -665,7 +592,7 @@
 	    var
 	      cPos = $(this).offset().top,
 	      topWindow = $(window).scrollTop();
-	    if (cPos < topWindow + 200) {
+	    if (cPos < topWindow + 450) {
 	      if (cc < 2) {
 	        $(".advert__number").addClass("viz");
 	        $('div').each(function() {
@@ -701,7 +628,6 @@
       range.select()
     }
   }
-
   function mask(e) {
     //console.log('mask',e);
     var matrix = this.placeholder,// .defaultValue
@@ -720,26 +646,36 @@
   window.addEventListener("DOMContentLoaded", function() {
     var input = document.querySelector("#online_phone");
     input.addEventListener("input", mask, false);
- 
   });
   /* конец валидации */
   /* trigger */
-
     let btn = document.querySelector('.callBack__icon');
     let phone = document.querySelector('.callBack__phone');
     let whatsApp = document.querySelector('.callBack__whatsApp');
     let mail = document.querySelector('.callBack__mail');
-
     btn.onclick = function () {
       phone.classList.toggle('active')
       whatsApp.classList.toggle('active')
       mail.classList.toggle('active')
     }
-
-  
-
   /* trigger end */
+  /* burger */
+ let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+	menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('activemenu');
+	menu.classList.toggle('activemenu');
+	document.querySelector("body").classList.toggle('hidden');
+});
+let punct = document.querySelectorAll('.head__menu_punct a');
+for (var i = 0; i < punct.length; i++) {
+punct[i].addEventListener('click',function(){
+	menuBtn.classList.remove('activemenu');
+	menu.classList.remove('activemenu');
+	document.querySelector("body").classList.remove('hidden');
+})
+};
+/* burger end */
 </script>
-<!-- bootstrap <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 </body>
 </html>
