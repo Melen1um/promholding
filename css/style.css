@@ -452,6 +452,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 }
 .childpad{
 	padding: 0px 25px;
+	line-height: 30px;
 }
 .first__title{
 	padding-bottom: 40px;
@@ -1576,7 +1577,9 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	flex-direction: column-reverse;
 }
 .childpad{
-	text-align: center
+	padding: 0px;
+	text-align: center;
+	line-height: 30px
 }
 .main__image{
 	margin-bottom: 30px;
