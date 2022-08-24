@@ -449,7 +449,9 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	margin-right: auto;
 	margin-left: auto;
 	text-align: justify;
-	padding: 0 10px;
+}
+.main__title:nth-child(1){
+	padding: 0px 25px;
 }
 .first__title{
 	padding-bottom: 40px;
@@ -1113,7 +1115,12 @@ td {
    transform: translateY(-170px)
 }
 /* callback end */
-/* adaptive */
+/* adaptive tablets */
+@media(max-width: 1280px){
+
+}
+/* adaptive tablets end */
+/* adaptive mobile*/
 @media(max-width: 767px){
 		.menu-btn {
 		width: 30px;
@@ -1725,13 +1732,11 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 .review{
 	margin: 90px 0px;
 }
-
 .review .container:before{
 	content:'';
 	background: url('../img/leftquote.svg');
 	padding: 15px 25px;
 	background-size: cover;
-
 }
 .review .container:after{
 	content:'';
@@ -1745,7 +1750,6 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 .review__info{
 	display: flex;
 	padding: 20px 10px;
-
 }
 .review__description{
 	font-size: 20px;
@@ -1758,7 +1762,6 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	height: 200px;
 	width: 200px;
 }
-
 /* review end */
 /* infoblock */
 .infoblock {
@@ -1771,7 +1774,6 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	font-size: 28px;
 	line-height: 30px;
 	margin-bottom: 25px;
-
 }
 .infoblock__table{
 	display: flex;
@@ -1789,7 +1791,6 @@ th {
 }
 tr {
 	border: 1px solid white;
-
 }
 td {
 	border: 1px solid white;
@@ -1809,11 +1810,9 @@ td {
 	height: 100%;
 	object-fit: cover;
 }
-
 .second {
 	margin-left: 10px;
 }
-
 /* infoblock end */
 /* formblock */
 .formblock{
@@ -1834,14 +1833,12 @@ td {
 }
 .formblock__form{
 	padding-left: 100px;
-
 }
 .formblock__image{
 	width: 210px;
 	position: absolute;
 	left:-35px;
 	padding-bottom: 50px;
-
 }
 .formblock__image img{
 	width: 100%;
@@ -1862,7 +1859,6 @@ td {
 	padding: 15px;
 	margin: 5px 0px;
 	border: 1px solid black;
-
 }
 .formblock__punct{
 	margin-bottom: 20px;
@@ -1889,13 +1885,10 @@ td {
 .formblock__label{
 
 }
-
-
 /* formblock end */
 /* company block */
 .company{
 	margin-top: 110px;
-
 }
 .company__main{
 	display: flex;
@@ -1905,7 +1898,6 @@ td {
 	display: flex;
 	flex-direction: column;
 	padding: 0 10px;
-
 }
 .company__texts{
 	flex: 1 1 auto;
@@ -1937,8 +1929,6 @@ td {
 	margin: 10px 5px;
 	margin-bottom: 20px;
 }
-
-
 /* company block end */
 /* advert */
 .advert{
@@ -1949,30 +1939,25 @@ td {
 	font-size: 30px;
 	font-weight: bold;
 	padding: 0 10px;
-
 }
 .advert__main{
 	padding: 0px;
-
 }
 .advert__block{
 	display: flex;
 	flex-direction: column-reverse;
 	margin-bottom: 20px;
-
 }
 .advert__text{
 	font-size: 22px;
 	flex: 1 1 auto;
 	line-height: 26px;
-
 }
 .advert__textimage{
 	border-radius: 20px;
 	border: 1px solid #6dce0e;
 	margin: 20px 0px;
 }
-
 .advert__obr{
 	padding-top: 15px;
 	font-size: 24px;
@@ -1999,7 +1984,6 @@ td {
 .advert__button{
 	flex: 0 1 auto;
 	text-align: center;
-
 }
 .advert__number {
 	font-size: 2em;
@@ -2013,7 +1997,6 @@ td {
 	display: table;
 	  /* 2 */
 }
-
 .clearfix:after {
   	clear: both;
 }
@@ -2025,8 +2008,6 @@ td {
 	  margin: 20px 15px;
 	  padding: 10px;
 }
-
-
 /* advert end */
 /* eldar */
 .eldar__title{
@@ -2038,13 +2019,11 @@ td {
 }
 .eldar__main{
 	display: block;
-
 }
 .eldar__textblock{
 	display: flex;
 	flex-direction: column;
 	padding: 0 20px;
-
 }
 .eldar__text{
 	font-size: 20px;
@@ -2064,10 +2043,7 @@ td {
 	height: 350px;
 	margin: 0px 10px;
 }
-
-
 /* eldar end */
-
 /* teleg */
 .teleg {
 	margin-top: 270px;
@@ -2123,7 +2099,6 @@ td {
 	  border-radius: 15px;
 	  border: 1.5px solid #6dce0e;
 }
-
 /* Поля ввода полной ширины */
 .teleg .form-container input[type=text], .form-container input[type=tel] {
 	  width: 100%;
@@ -2133,13 +2108,11 @@ td {
 	  background: #f1f1f1;
 	  border-radius: 10px;
 }
-
 /* Когда входы получают фокус, сделайте что-нибудь */
 .teleg .form-container input[type=text]:focus, .form-container input[type=tel]:focus {
   background-color: #ddd;
   outline: none;
 }
-
 /* Установите стиль для кнопки отправить/войти */
 .teleg .form-container .btn {
 	  background-color: #4CAF50;
@@ -2153,8 +2126,6 @@ td {
 	  border-radius: 10px;
 	  margin-top: 10px;
 }
-
-
 /* Добавить некоторые эффекты наведения на кнопки */
 .teleg .form-container .btn:hover, .open-button:hover {
   	opacity: 1;
@@ -2177,7 +2148,6 @@ td {
 /* teleg end */
 .why__answer a{
 	color: black;
-
 }
 .company:last-child{
 	margin-top: 70px;
