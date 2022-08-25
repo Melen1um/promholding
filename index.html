@@ -681,6 +681,31 @@ punct[i].addEventListener('click',function(){
 })
 };
 /* burger end */
+/* scroll to top */
+$(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Вверх"><img src="img/toparrow.svg" alt=""></a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "2600") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "2600") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});
+
+/* scroll to top end */
 </script>
 </body>
 </html>
