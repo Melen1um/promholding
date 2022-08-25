@@ -2708,9 +2708,13 @@ td {
 .head__company{
 	width: 220px;
 }
-img{
+.head__company img{
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+}
+table{
+	font-size: 11px
 }
 }
 /* adaptive end */
