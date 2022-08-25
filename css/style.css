@@ -1965,9 +1965,6 @@ td {
 .head__numbers {
 	display: none;
 }
-.head__company {
-
-}
 .head__mail {
 	display: none;
 }
@@ -2707,6 +2704,13 @@ td {
 .telegform__image{
 	left: 50%;
 	top: 84%;
+}
+.head__company{
+	width: 220px;
+}
+img{
+	width: 100%;
+	height: 100%;
 }
 }
 /* adaptive end */
