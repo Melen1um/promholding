@@ -415,8 +415,8 @@ body{
 	-webkit-text-stroke:2px #6dce0e;
 	color: transparent;
 	position: relative;
-	top: 77px;
-	left: 280px;
+	top: 35%;
+	left: 40%;
 }
 .why__wrapper{
 	display: flex;
@@ -1278,65 +1278,6 @@ td {
 	  z-index: 9;
 	  border-radius: 15px;
 }
-/* Добавить стили для контейнера формы */
-.form-container {
-	  max-width: 100%;
-	  padding: 30px 10px;
-	  background-color: white;
-	 	border-radius: 12px;
-}
-/* Поля ввода полной ширины */
-.form-container input[type=text], .form-container input[type=tel] {
-	  width: 100%;
-	  padding: 15px;
-	  margin: 12px 0px;
-	  border: none;
-	  background: #f1f1f1;
-	  border-radius: 10px;
-}
-.head .form-container input[type=tel]{
-	margin: 12px 0px !important;
-}
-/* Когда входы получают фокус, сделайте что-нибудь */
-.form-container input[type=text]:focus, .form-container input[type=tel]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-.b__popup{
-	 width:100%;
-   height: 2000px;
-   background-color: rgba(0,0,0,0.5);
-   overflow:hidden;
-   position:fixed;
-   z-index: 6;
-   top:0px;
-}
-/* Установите стиль для кнопки отправить/войти */
-.form-container .btn {
-	  background-color: #4CAF50;
-	  color: white;
-	  padding: 16px 20px;
-	  border: none;
-	  cursor: pointer;
-	  width: 100%;
-	  margin-bottom:10px;
-	  opacity: 0.8;
-	  border-radius: 10px;
-}
-/* Добавить красный цвет фона для кнопки "Отмена" */
-.form-container .cancel {
-  	background-color: red;
-  	position: absolute;
-  	top: 0px;
-  	right: 0px;
-  	border-radius: 0px 10px 0px 10px;
-  	padding: 9px 14px;
-  	margin: -3px;
-}
-/* Добавить некоторые эффекты наведения на кнопки */
-.form-container .btn:hover, .open-button:hover {
-  	opacity: 1;
-}
 .form-color {
 	color: black;
 	padding-right: 20px;
@@ -1954,20 +1895,6 @@ td {
 	font-weight: bold;
 	margin-bottom: 10px;
 	}
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	  /* 1 */
-	display: table;
-	  /* 2 */
-}
-.clearfix:after {
-  	clear: both;
-}
-.viz {
-	opacity: 1;
-	transition: 1s;
-}
 .bl {
 	  margin: 0 5px;
 	  margin-bottom: 10px;
@@ -1992,10 +1919,6 @@ td {
 	display: flex;
 	flex-direction: column;
 	padding: 0 20px;
-}
-.eldar__button{
-	text-align: center;
-	margin-top: 20px;
 }
 .eldar__image{
 	border: 2px solid #6dce0e;
@@ -2042,52 +1965,6 @@ td {
 	left: -60px;
 	top: 50px;
 	z-index: 2;
-}
-.teleg #myForm {
-	width: 100%;
-}
-.teleg .form-container {
-	  min-width: 100% !important;
-	  padding: 35px;
-	  background-color: white;
-	  border-radius: 15px;
-	  border: 1.5px solid #6dce0e;
-}
-/* Поля ввода полной ширины */
-.teleg .form-container input[type=text], .form-container input[type=tel] {
-	  width: 100%;
-	  padding: 15px;
-	  margin: 5px 0 5px 0;
-	  border: none;
-	  background: #f1f1f1;
-	  border-radius: 10px;
-}
-/* Когда входы получают фокус, сделайте что-нибудь */
-.teleg .form-container input[type=text]:focus, .form-container input[type=tel]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-/* Установите стиль для кнопки отправить/войти */
-.teleg .form-container .btn {
-	  background-color: #4CAF50;
-	  color: white;
-	  padding: 16px 20px;
-	  border: none;
-	  cursor: pointer;
-	  width: 100%;
-	  margin-bottom:10px;
-	  opacity: 0.8;
-	  border-radius: 10px;
-	  margin-top: 10px;
-}
-/* Добавить некоторые эффекты наведения на кнопки */
-.teleg .form-container .btn:hover, .open-button:hover {
-  	opacity: 1;
-}
-.teleg .form-color {
-	color: black;
-	font-size: 25px;
-	padding-bottom: 10px;
 }
 .telegform__image{
 	width: 250px;
@@ -2265,69 +2142,6 @@ td {
 	  border: 3px solid #6dce0e;
 	  z-index: 9;
 	  border-radius: 15px;
-}
-/* Добавить стили для контейнера формы */
-.form-container {
-	  max-width: 100%;
-	  padding: 30px 10px;
-	  background-color: white;
-	 	border-radius: 12px;
-}
-/* Поля ввода полной ширины */
-.form-container input[type=text], .form-container input[type=tel] {
-	  width: 100%;
-	  padding: 15px;
-	  margin: 12px 0px;
-	  border: none;
-	  background: #f1f1f1;
-	  border-radius: 10px;
-}
-.head .form-container input[type=tel]{
-	margin: 12px 0px !important;
-}
-/* Когда входы получают фокус, сделайте что-нибудь */
-.form-container input[type=text]:focus, .form-container input[type=tel]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-.b__popup{
-	 width:100%;
-   height: 2000px;
-   background-color: rgba(0,0,0,0.5);
-   overflow:hidden;
-   position:fixed;
-   z-index: 6;
-   top:0px;
-}
-/* Установите стиль для кнопки отправить/войти */
-.form-container .btn {
-	  background-color: #4CAF50;
-	  color: white;
-	  padding: 16px 20px;
-	  border: none;
-	  cursor: pointer;
-	  width: 100%;
-	  margin-bottom:10px;
-	  opacity: 0.8;
-	  border-radius: 10px;
-}
-/* Добавить красный цвет фона для кнопки "Отмена" */
-.form-container .cancel {
-  	background-color: red;
-  	position: absolute;
-  	top: 0px;
-  	right: 0px;
-  	border-radius: 0px 10px 0px 10px;
-  	padding: 9px 14px;
-  	margin: -3px;
-}
-/* Добавить некоторые эффекты наведения на кнопки */
-.form-container .btn:hover, .open-button:hover {
-  	opacity: 1;
-}
-.form-color {
-	color: black;
-	padding-right: 20px;
 }
 /* Header styles end */
 /* about Main */
@@ -2939,20 +2753,6 @@ td {
 	font-weight: bold;
 	margin-bottom: 20px;
 	}
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	  /* 1 */
-	display: table;
-	  /* 2 */
-}
-.clearfix:after {
-  	clear: both;
-}
-.viz {
-	opacity: 1;
-	transition: 1s;
-}
 .bl {
 	  margin: 20px 15px;
 	  padding: 10px;
@@ -2978,10 +2778,6 @@ td {
 	font-size: 20px;
 	line-height: 30px;
 	text-align: justify;
-}
-.eldar__button{
-	text-align: center;
-	margin-top: 20px;
 }
 .eldar__image{
 	border: 2px solid #6dce0e;
@@ -3030,66 +2826,14 @@ td {
 	top: -70px;
 	z-index: 2;
 }
-.teleg #myForm {
-	width: 100%;
-}
-.teleg .form-container {
-	  min-width: 100% !important;
-	  padding: 35px;
-	  background-color: white;
-	  border-radius: 15px;
-	  border: 1.5px solid #6dce0e;
-}
-/* Поля ввода полной ширины */
-.teleg .form-container input[type=text], .form-container input[type=tel] {
-	  width: 100%;
-	  padding: 15px;
-	  margin: 5px 0 5px 0;
-	  border: none;
-	  background: #f1f1f1;
-	  border-radius: 10px;
-}
-/* Когда входы получают фокус, сделайте что-нибудь */
-.teleg .form-container input[type=text]:focus, .form-container input[type=tel]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-/* Установите стиль для кнопки отправить/войти */
-.teleg .form-container .btn {
-	  background-color: #4CAF50;
-	  color: white;
-	  padding: 16px 20px;
-	  border: none;
-	  cursor: pointer;
-	  width: 100%;
-	  margin-bottom:10px;
-	  opacity: 0.8;
-	  border-radius: 10px;
-	  margin-top: 10px;
-}
 /* Добавить некоторые эффекты наведения на кнопки */
-.teleg .form-container .btn:hover, .open-button:hover {
-  	opacity: 1;
-}
-.teleg .form-color {
-	color: black;
-	font-size: 25px;
-	padding-bottom: 10px;
-}
 .telegform__image{
 	width: 200px;
 	position: absolute;
 	left: 58%;
 	top: 84%;
 }
-.telegform__image img{
-	width: 100%;
-	height: 100%;
-}
 /* teleg end */
-.why__answer a{
-	color: black;
-}
 .company:last-child{
 	margin-top: 70px;
 }
