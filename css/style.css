@@ -1486,45 +1486,6 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 .foot__map{
 	border: none;
 }
-.foot__address{
-	padding-bottom: 18px;
-	font-size: 16px;
-	font-weight: 400;
-}
-.foot__address:before{
-	content: '';
-	background-image: url('../img/location.svg');
-	background-size: cover;
-	padding-right: 13px;
-	padding-top: 10px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background-repeat: no-repeat
-}
-.foot__number{
-	padding-bottom: 18px;
-}
-.foot__number:before{
-	content: '';
-	background-image: url('../img/phone.svg');
-	background-size: cover;
-	padding-right: 10px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background-repeat: no-repeat
-}
-.foot__email a{
-	color: white;
-}
-.foot__email:before{
-	content: '';
-	background-image: url('../img/email.svg');
-	background-size: cover;
-	padding-right: 10px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background-repeat: no-repeat
-}
 /* footer end */
 /* review */
 .review{
@@ -2083,7 +2044,7 @@ td {
 	font-weight: bold;
 }
 .akif__descript{
-	text-align: justify;
+	text-align: center;
 	font-size: 20px;
 	padding-left: 0px;
 	line-height: 28px;
@@ -2195,7 +2156,7 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	font-size: 20px;
 	font-weight: 400;
 	margin: 0px auto 20px;
-	text-align: justify;
+	text-align: left;
 }
 .main__general:nth-child(3){
 	display: flex;
@@ -2299,47 +2260,8 @@ box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.4);
 	border: none;
 	margin: 0px auto;
 }
-.foot__address{
-	padding-bottom: 18px;
-	font-size: 16px;
-	font-weight: 400;
-}
-.foot__address:before{
-	content: '';
-	background-image: url('../img/location.svg');
-	background-size: cover;
-	padding-right: 13px;
-	padding-top: 10px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background-repeat: no-repeat
-}
-.foot__number{
-	padding-bottom: 18px;
-}
-.foot__number:before{
-	content: '';
-	background-image: url('../img/phone.svg');
-	background-size: cover;
-	padding-right: 10px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background-repeat: no-repeat
-}
-.foot__email a{
-	color: white;
-}
 .cont {
 	flex: 1 1 35%;
-}
-.foot__email:before{
-	content: '';
-	background-image: url('../img/email.svg');
-	background-size: cover;
-	padding-right: 10px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background-repeat: no-repeat
 }
 /* footer end */
 /* review */
@@ -2521,7 +2443,7 @@ td {
 .company__text{
 	font-size: 20px;
 	line-height: 26px;
-	text-align: justify;
+	text-align: left;
 }
 .company__button{
 	flex: 0 1 auto;
